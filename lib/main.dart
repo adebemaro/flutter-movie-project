@@ -149,18 +149,6 @@ class MovieApp extends StatelessWidget {
                     height: 200,
                     width: 200,
                   ),
-                  Spacer(),
-                  Image.asset(
-                    "assets/images/person1.jpeg",
-                    height: 200,
-                    width: 200,
-                  ),
-                  Spacer(),
-                  Image.asset(
-                    "assets/images/person2.jpeg",
-                    height: 200,
-                    width: 200,
-                  ),
                 ],
               ),
             )
