@@ -101,6 +101,9 @@ class MovieApp extends StatelessWidget {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      height: 30,
+                    ),
                   ],
                 ),
                 const Spacer(),
