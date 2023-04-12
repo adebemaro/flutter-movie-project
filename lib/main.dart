@@ -13,151 +13,172 @@ class MovieApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
           child: Scaffold(
-        backgroundColor: Colors.black26,
-        appBar: AppBar(
-          title: const Text("Learn German"),
-          actions: const [
-            Padding(
-              padding: EdgeInsets.only(right: 8.0),
-              child: Icon(
-                Icons.search,
-                size: 30,
+              backgroundColor: Colors.black26,
+              appBar: AppBar(
+                title: const Text("Learn German"),
+                actions: const [
+                  Padding(
+                    padding: EdgeInsets.only(right: 8.0),
+                    child: Icon(
+                      Icons.search,
+                      size: 30,
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 8.0),
+                    child: CircleAvatar(
+                      backgroundColor: Colors.blueAccent,
+                      backgroundImage: AssetImage('assets/images/profile.jpeg'),
+                    ),
+                  )
+                ],
+                backgroundColor: Colors.grey,
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(right: 8.0),
-              child: CircleAvatar(
-                backgroundColor: Colors.blueAccent,
-                backgroundImage: AssetImage('assets/images/profile.jpeg'),
-              ),
-            )
-          ],
-          backgroundColor: Colors.grey,
-        ),
-        drawer: const Drawer(),
-        body: Column(
-          children: [
-            const SizedBox(height: 30),
-            Row(
-              children: [
-                Column(
-                  children: [
-                    Container(
-                      margin: const EdgeInsets.only(left: 5),
-                      height: 60,
-                      width: 60,
-                      decoration: BoxDecoration(
-                        color: Colors.teal,
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                      child: const Icon(
-                        Icons.alarm,
-                        size: 30,
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    Container(
-                      margin: const EdgeInsets.only(left: 5),
-                      width: 100,
-                      height: 40,
-                      child: const Text(
-                        "Time and Date",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                const Spacer(),
-                Column(
-                  children: [
-                    Container(
-                      margin: const EdgeInsets.only(left: 5),
-                      height: 60,
-                      width: 60,
-                      decoration: BoxDecoration(
-                        color: Colors.amber,
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                      child: const Icon(
-                        Icons.map,
-                        size: 30,
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    Container(
-                      margin: const EdgeInsets.only(left: 15),
-                      width: 100,
-                      height: 40,
-                      child: const Text(
-                        "Direction & Place",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                  ],
-                ),
-                const Spacer(),
-                Column(
-                  children: [
-                    Container(
-                      margin: const EdgeInsets.only(left: 15),
-                      height: 60,
-                      width: 60,
-                      decoration: BoxDecoration(
-                        color: Colors.green,
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                      child: const Icon(
-                        Icons.car_rental,
-                        size: 30,
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    Container(
-                      margin: const EdgeInsets.only(left: 15),
-                      width: 100,
-                      height: 40,
-                      child: const Text(
-                        "Transportation",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
-                  ],
-                )
-              ],
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
+              drawer: const Drawer(),
+              body: Column(
                 children: [
-                  Image.asset(
-                    "assets/images/profile.jpeg",
-                    height: 200,
-                    width: 200,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+                    child: Row(
+                      children: [
+                        Column(
+                          children: [
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            Container(
+                              height: 80,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                border:
+                                    Border.all(color: Colors.white, width: 2),
+                                borderRadius: BorderRadius.circular(25),
+                                color: Colors.amber,
+                                image: const DecorationImage(
+                                  image: AssetImage(
+                                    'assets/images/game_pic2.jpg',
+                                  ),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            const Text(
+                              "Ballons TD 6",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            Row(
+                              children: const [
+                                Icon(
+                                  Icons.thumb_up,
+                                  color: Colors.green,
+                                  size: 18,
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 8.0),
+                                  child: Text(
+                                    "100%",
+                                    style: TextStyle(color: Colors.green),
+                                  ),
+                                )
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            Container(
+                              width: 100,
+                              height: 20,
+                              decoration: BoxDecoration(
+                                  color: Colors.grey,
+                                  borderRadius: BorderRadius.circular(50)),
+                              child: const Center(
+                                child: Text(
+                                  "Free Shopping",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 12.0),
+                          child: Column(
+                            children: [
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Container(
+                                height: 80,
+                                width: 100,
+                                decoration: BoxDecoration(
+                                  border:
+                                      Border.all(color: Colors.white, width: 2),
+                                  borderRadius: BorderRadius.circular(25),
+                                  color: Colors.amber,
+                                  image: const DecorationImage(
+                                    image: AssetImage(
+                                      'assets/images/game_pic1.jpg',
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              const Text(
+                                "Offroad CutLaw",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Row(
+                                children: const [
+                                  Icon(
+                                    Icons.thumb_up,
+                                    color: Colors.green,
+                                    size: 18,
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(left: 8.0),
+                                    child: Text(
+                                      "100%",
+                                      style: TextStyle(color: Colors.green),
+                                    ),
+                                  )
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Container(
+                                width: 100,
+                                height: 20,
+                                decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    borderRadius: BorderRadius.circular(50)),
+                                child: const Center(
+                                  child: Text(
+                                    "Free Shopping",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
-              ),
-            )
-          ],
-        ),
-      )),
+              ))),
     );
   }
 }
